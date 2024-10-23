@@ -1,0 +1,48 @@
+# Ignore thumbnails created by windows
+Thumbs.db
+
+# Ignore Unity compiled files -EngineHack Isaac
+Temp/
+
+#Ignore Unity lib
+*.csproj
+*.sln
+*.vsconfig
+obj/
+*.favdoc
+Library/
+UserSettings/
+
+# Visual Studio cache directory
+.vs
+
+#Ignore svn
+*.svn
+
+#Ignore assetbundle
+Export/
+AssetBundles/
+PatchBundles/
+StreamingAssets/
+StreamingAssets.meta
+
+#Ignore
+*.apk
+*.zip
+
+#Ignore log
+*.log
+
+#Ignore uwa
+TestData/
+Logs/
+
+#Ignore ArtUtilities
+ArtUtilities/
+ArtUtilities.meta
+
+#Ignore Odin Config
+/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset
+/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/TypeRegistryUserConfig.asset
+/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/ColorPaletteManager.asset.meta
+/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/TypeRegistryUserConfig.asset.meta
