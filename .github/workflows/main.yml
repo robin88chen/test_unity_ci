@@ -58,6 +58,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Test results (${{ matrix.testMode }})
+          path: artifacts
 #         path: ${{ steps.testRunner.outputs.artifactsPath }}
 
   buildWebGL:
