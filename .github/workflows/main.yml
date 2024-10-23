@@ -12,10 +12,6 @@ jobs:
     strategy:
       fail-fast: false
     steps:
-      - name: echo
-        run: echo "free disk space"
-      - name: free disk space
-        uses: jlumbroso/free-disk-space@v1.2.0
       - name: Checkout code
         uses: actions/checkout@v2
 
