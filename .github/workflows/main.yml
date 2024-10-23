@@ -56,9 +56,10 @@ jobs:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: actions/upload-artifact@v4
-        with:
-          name: Test results (${{ matrix.testMode }})
-          path: ${{ steps.testRunner.outputs.artifactsPath }}
+          with:
+            name: Test results (${{ matrix.testMode }})
+            path: testRunner/
+#            path: ${{ steps.testRunner.outputs.artifactsPath }}
 
   buildWebGL:
     needs: testRunner
