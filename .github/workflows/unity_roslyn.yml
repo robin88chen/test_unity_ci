@@ -17,17 +17,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Setup Unity
-        uses: kuler90/setup-unity@v1
-        with:
-          unity-modules: android
+      #- name: Setup Unity
+      #  uses: kuler90/setup-unity@v1
+      #  with:
+      #    unity-modules: android
 
-      - name: Activate Unity
-        uses: kuler90/activate-unity@v1
-        with:
-          unity-username: ${{ secrets.UNITY_USERNAME }}
-          unity-password: ${{ secrets.UNITY_PASSWORD }}
-          unity-authenticator-key: ${{ secrets.UNITY_LICENSE }}
+      #- name: Activate Unity
+      #  uses: kuler90/activate-unity@v1
+      #  with:
+      #    unity-username: ${{ secrets.UNITY_USERNAME }}
+      #    unity-password: ${{ secrets.UNITY_PASSWORD }}
+      #    unity-authenticator-key: ${{ secrets.UNITY_LICENSE }}
 
       - name: Run Roslyn analysis
         run: dotnet roslyn-analyze --project-path ./Assembly-CSharp.csproj
