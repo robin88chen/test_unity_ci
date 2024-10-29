@@ -23,6 +23,6 @@ jobs:
     #- name: Restore dependencies
     #  run: dotnet restore Assembly-CSharp.csproj
     - name: Build
-      run: dotnet roslyn-analyze Assembly-CSharp.csproj
+      run: dotnet build Assembly-CSharp.csproj
     - name: Test
       run: dotnet test --no-build --verbosity normal
