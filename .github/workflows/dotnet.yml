@@ -19,10 +19,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore Assembly-CSharp.csproj
+        dotnet-version: '8.0.x'
+    #- name: Restore dependencies
+    #  run: dotnet restore Assembly-CSharp.csproj
     - name: Build
-      run: dotnet build Assembly-CSharp.csproj --no-restore
+      run: dotnet build Assembly-CSharp.csproj
     - name: Test
       run: dotnet test --no-build --verbosity normal
