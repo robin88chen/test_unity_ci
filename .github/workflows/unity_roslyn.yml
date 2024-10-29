@@ -1,0 +1,23 @@
+name: Unity Roslyn Action
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Unity
+        uses: game-ci/unity@v3
+
+      - name: Run Roslyn analysis
+        run: dotnet roslyn-analyze --project-path ./Assembly-CSharp.csproj
