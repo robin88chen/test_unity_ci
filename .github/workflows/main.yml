@@ -42,6 +42,9 @@ jobs:
       - name: Install Unity on ubuntu
         run: mkdir -p ~/Unity && tar -xf Unity.tar.xz -C ~/Unity
       
+      - name: Analyze
+        run: dotnet build ./TestForCI.sln
+
       #- name: Restore Library cache
       #  uses: actions/cache@v2
       #  with:
