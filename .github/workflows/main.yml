@@ -72,5 +72,5 @@ jobs:
 
       - uses: actions/upload-artifact@v4
         with:
-          name: build-Android-$GITHUB_REF_NAME
+          name: build-Android-${{ env.GITHUB_REF_NAME }}
           path: build/Android
