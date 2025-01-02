@@ -8,17 +8,17 @@ public class EmptyIssue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Application.SetStackTraceLogType(LogType.Error, StackTraceLogType.Full);
+        //Application.SetStackTraceLogType(LogType.Error, StackTraceLogType.Full);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (m_hasLogged)
+        /*if (m_hasLogged)
         {
             return;
         }
         Debug.LogError("This is an error message");
-        m_hasLogged = true;
+        m_hasLogged = true;*/
     }
 }
